@@ -1,0 +1,10 @@
+[
+  {
+    "address": "Atlanta Flip Deal",
+    "price": 120000,
+    "arv": 260000,
+    "distress": true,
+    "absentee": true,
+    "tax_due": 8000
+  }
+]
