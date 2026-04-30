@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Deal Feed V2</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0b1120" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">GitHub + Netlify Edition</p>
+      <h1>APEX DEAL FEED V2</h1>
+      <p class="sub">Daily deal sniper dashboard with alerts, scoring, imports, exports, and lender fit.</p>
+    </div>
+    <button id="installBtn" class="ghost hidden">Install App</button>
+  </header>
+
+  <main>
+    <section class="control-panel card">
+      <div>
+        <h2>Data Source</h2>
+        <p>Default: <code>data/deals.json</code>. Replace this file in GitHub to update your live app.</p>
+      </div>
+      <div class="actions">
+        <button id="loadDemoBtn">Load Feed</button>
+        <label class="fileBtn">Import CSV <input id="csvInput" type="file" accept=".csv" /></label>
+        <button id="exportBtn" class="secondary">Export Qualified CSV</button>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat card"><span id="totalDeals">0</span><p>Total Deals</p></div>
+      <div class="stat card"><span id="apexDeals">0</span><p>APEX Deals</p></div>
+      <div class="stat card"><span id="hotDeals">0</span><p>HOT Deals</p></div>
+      <div class="stat card"><span id="watchDeals">0</span><p>WATCH Deals</p></div>
+    </section>
+
+    <section class="tabs">
+      <button class="tab active" data-tab="deals">Deals</button>
+      <button class="tab" data-tab="alerts">Alerts</button>
+      <button class="tab" data-tab="lenders">Lender Fit</button>
+      <button class="tab" data-tab="settings">Settings</button>
+    </section>
+
+    <section id="deals" class="tabPane active">
+      <div class="filter-row card">
+        <input id="searchInput" placeholder="Search address, city, county, strategy..." />
+        <select id="stageFilter">
+          <option value="ALL">All stages</option>
+          <option value="APEX">APEX</option>
+          <option value="HOT">HOT</option>
+          <option value="WATCH">WATCH</option>
+          <option value="REJECT">REJECT</option>
+        </select>
+      </div>
+      <div id="dealList" class="deal-list"></div>
+    </section>
+
+    <section id="alerts" class="tabPane">
+      <div class="card">
+        <h2>Deal Alerts</h2>
+        <p>Alerts trigger when a deal hits your APEX or HOT thresholds. Browser notifications work after permission is allowed.</p>
+        <button id="enableAlertsBtn">Enable Browser Alerts</button>
+      </div>
+      <div id="alertList" class="deal-list"></div>
+    </section>
+
+    <section id="lenders" class="tabPane">
+      <div class="card">
+        <h2>Lender Fit Rules</h2>
+        <p>Static lender matrix lives in <code>data/lenders.json</code>. Update it in GitHub anytime.</p>
+      </div>
+      <div id="lenderList" class="deal-list"></div>
+    </section>
+
+    <section id="settings" class="tabPane">
+      <div class="card">
+        <h2>GitHub + Netlify Workflow</h2>
+        <ol>
+          <li>Upload this folder to GitHub.</li>
+          <li>Connect GitHub repo to Netlify.</li>
+          <li>Edit <code>data/deals.json</code> daily or upload CSV inside the app.</li>
+          <li>Netlify auto-redeploys after GitHub changes.</li>
+          <li>Open on phone and Add to Home Screen.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

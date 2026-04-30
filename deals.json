@@ -1,0 +1,7 @@
+[
+  {"address":"2186 Vesta Ave NW","city":"Atlanta","state":"GA","county":"Fulton","property_type":"Multifamily","units":3,"price":130000,"arv":450000,"rent":4200,"distress":true,"absentee":true,"tax_due":8200,"strategy":"BRRRR / Rehab"},
+  {"address":"1055 Benning Dr","city":"Columbus","state":"GA","county":"Muscogee","property_type":"Single Family","units":1,"price":40000,"arv":145000,"rent":1300,"distress":true,"absentee":true,"tax_due":3100,"strategy":"Rental / Section 8"},
+  {"address":"5888 New Peachtree Rd","city":"Doraville","state":"GA","county":"DeKalb","property_type":"Land","units":0,"price":4800000,"arv":8500000,"rent":0,"distress":false,"absentee":true,"tax_due":0,"strategy":"New Construction / Land Play"},
+  {"address":"421 Investor Ln","city":"Macon","state":"GA","county":"Bibb","property_type":"Single Family","units":1,"price":85000,"arv":205000,"rent":1550,"distress":true,"absentee":false,"tax_due":6200,"strategy":"Fix and Hold"},
+  {"address":"900 Equity Ave","city":"Atlanta","state":"GA","county":"Fulton","property_type":"Duplex","units":2,"price":175000,"arv":330000,"rent":3000,"distress":false,"absentee":true,"tax_due":11000,"strategy":"DSCR Rental"}
+]

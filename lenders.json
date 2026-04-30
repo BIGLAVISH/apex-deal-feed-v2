@@ -1,0 +1,8 @@
+[
+  {"name":"Kiavi","difficulty":"Easy","products":"Fix and flip, bridge, DSCR rental","bureau":"Varies","states":"National"},
+  {"name":"LendingOne","difficulty":"Moderate","products":"DSCR rental, fix-to-rent, new construction, ground-up","bureau":"Varies","states":"National"},
+  {"name":"Lima One Capital","difficulty":"Moderate","products":"Fix2Rent, DSCR, rental, construction","bureau":"Varies","states":"National"},
+  {"name":"RCN Capital","difficulty":"Moderate","products":"New construction, bridge, DSCR, rental","bureau":"Varies","states":"National"},
+  {"name":"CoreVest","difficulty":"Hard","products":"Portfolio rental, DSCR, multifamily, rental portfolios","bureau":"Varies","states":"National"},
+  {"name":"Local Bank / Credit Union","difficulty":"Hard","products":"Portfolio loan, land, construction, commercial","bureau":"Varies","states":"Local"}
+]
